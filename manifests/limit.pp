@@ -1,4 +1,4 @@
-define limits::limit ( $domain=$name, $type="-", $item, $value ) {
+define limits::limit ( $item, $value, $domain=$name, $type="-" ) {
   #
   concat::fragment{ "limits.conf ${name} ${type} ${item} ${value}":
     target  => $limits::params::limits_conf,

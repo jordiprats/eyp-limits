@@ -1,4 +1,4 @@
-class limits inherits params {
+class limits inherits limits::params {
 
   package { $limits::params::package:
     ensure => 'installed',

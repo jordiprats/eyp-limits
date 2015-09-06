@@ -1,11 +1,11 @@
 {
   "name": "eyp-limits",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "eyp",
   "summary": "manages /etc/security/limits.conf",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "source": "https://github.com/jordiprats/eyp-epel",
-  "project_page": "http://systemadmin.es",
+  "project_page": "http://systemadmin.es/herramientas/puppet-etc-security-limits-conf",
   "issues_url": null,
   "operatingsystem_support": [
     {
