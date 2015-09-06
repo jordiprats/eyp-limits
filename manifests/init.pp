@@ -13,7 +13,7 @@ class limits inherits limits::params {
     require => Package[$limits::params::package],
   }
 
-  concat::fragment{ "limits.conf header":
+  concat::fragment{ 'limits.conf header':
     target  => $limits::params::limits_conf,
     order => '00',
     content => template("${module_name}/limits_header.erb"),
