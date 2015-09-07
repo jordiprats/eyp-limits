@@ -3,13 +3,13 @@
 #### Table of Contents
 
 1. [Overview](#overview)
-2. [Module Description - What the module does and why it is useful](#module-description)
-3. [Setup - The basics of getting started with limits](#setup)
+2. [Module Description](#module-description)
+3. [Setup](#setup)
     * [What limits affects](#what-limits-affects)
     * [Setup requirements](#setup-requirements)
     * [Beginning with limits](#beginning-with-limits)
-4. [Usage - Configuration options and additional functionality](#usage)
-5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
+4. [Usage](#usage)
+5. [Limitations](#limitations)
 
 ## Overview
 
@@ -59,15 +59,34 @@ This will generate the following entries:
 
 ## Usage
 
-Put the classes, types, and resources for customizing, configuring, and doing
-the fancy stuff with your module here.
+### class limits
+Without paremeters, it just setups the limits.conf file with a header
 
-## Reference
+### define limits::limit
 
-Here, list the classes, types, providers, facts, etc contained in your module.
-This section should include all of the under-the-hood workings of your module so
-people know what the module is touching on their system but don't need to mess
-with things. (We are working on automating this section!)
+* domain: user, %group or * (means all)
+* type: soft, hard or - (means both)
+* item: can be one of the following:
+ * core - limits the core file size (KB)
+ * data - max data size (KB)
+ * fsize - maximum filesize (KB)
+ * memlock - max locked-in-memory address space (KB)
+ * nofile - max number of open files
+ * rss - max resident set size (KB)
+ * stack - max stack size (KB)
+ * cpu - max CPU time (MIN)
+ * nproc - max number of processes
+ * as - address space limit (KB)
+ * maxlogins - max number of logins for this user
+ * maxsyslogins - max number of logins on the system
+ * priority - the priority to run user process with
+ * locks - max number of file locks the user can hold
+ * sigpending - max number of pending signals
+ * msgqueue - max memory used by POSIX message queues (bytes)
+ * nice - max nice priority allowed to raise to values: [-20, 19]
+ * rtprio - max realtime priority
+ * chroot - change root to directory (Debian-specific)
+* value: value for item
 
 ## Limitations
 
