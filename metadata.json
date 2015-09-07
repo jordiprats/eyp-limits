@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "source": "https://github.com/jordiprats/eyp-epel",
   "project_page": "http://systemadmin.es/herramientas/puppet-etc-security-limits-conf",
-  "issues_url": null,
+  "issues_url": "https://github.com/jordiprats/eyp-limits/issues",
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
