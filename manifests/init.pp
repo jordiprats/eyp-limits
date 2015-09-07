@@ -5,6 +5,7 @@ class limits inherits limits::params {
   }
 
   #/etc/security/limits.conf
+  #TODO: mirar quna fer servir limits.d en lloc del limits.conf
   concat { $limits::params::limits_conf:
     ensure  => 'present',
     owner   => 'root',
