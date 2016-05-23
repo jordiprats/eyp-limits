@@ -1,5 +1,10 @@
 # limits
 
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+
+**NTTCom-MS/eyp-limits**: [![Build Status](https://travis-ci.org/NTTCom-MS/eyp-limits.png?branch=master)](https://travis-ci.org/NTTCom-MS/eyp-limits)
+
+
 #### Table of Contents
 
 1. [Overview](#overview)
@@ -13,7 +18,7 @@
 
 ## Overview
 
-Controll your /etc/security/limits.conf via puppet
+Control your **/etc/security/limits.conf** via puppet
 
 ## Module Description
 
@@ -90,4 +95,8 @@ Without paremeters, it just setups the limits.conf file with a header
 
 ## Limitations
 
-Tested on Ubuntu and CentOS
+Tested on
+* Ubuntu 14.04
+* CentOS 5
+* CentOS 6
+* CentOS 7
