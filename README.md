@@ -65,7 +65,7 @@ This will generate the following entries:
 ## Usage
 
 ### class limits
-Without paremeters, it just setups the limits.conf file with a header
+Without parameters, it just setups the limits.conf file with a header
 
 ### define limits::limit
 
@@ -100,3 +100,4 @@ Tested on
 * CentOS 5
 * CentOS 6
 * CentOS 7
+* SLES 11 SP3

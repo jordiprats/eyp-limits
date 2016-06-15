@@ -11,6 +11,10 @@ class limits::params {
     {
       $package='libpam-modules'
     }
+    'Suse':
+    {
+      $package='pam'
+    }
     default: { fail('Unsupported OS!')  }
   }
 }
