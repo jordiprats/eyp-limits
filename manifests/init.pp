@@ -1,9 +1,5 @@
 class limits inherits limits::params {
 
-  package { $limits::params::package:
-    ensure => 'installed',
-  }
-
   #/etc/security/limits.conf
   #TODO: mirar quna fer servir limits.d en lloc del limits.conf
   concat { $limits::params::limits_conf:
@@ -11,7 +7,6 @@ class limits inherits limits::params {
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    require => Package[$limits::params::package],
   }
 
   concat::fragment{ 'limits.conf header':

@@ -5,15 +5,12 @@ class limits::params {
   {
     'redhat':
     {
-      $package='pam'
     }
     'Debian':
     {
-      $package='libpam-modules'
     }
     'Suse':
     {
-      $package='pam'
     }
     default: { fail('Unsupported OS!')  }
   }
