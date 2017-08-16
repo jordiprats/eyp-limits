@@ -3,3 +3,6 @@ pkg/
 controller-v4.0.6.1.sh
 spec/fixtures/
 Gemfile.lock
+/.yardwarns
+/.yardoc
+/doc
