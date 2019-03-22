@@ -1,4 +1,4 @@
-# limits
+# limits - DEPRECATED, please use eyp-pam instead
 
 #### Table of Contents
 
